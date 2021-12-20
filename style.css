@@ -1,0 +1,131 @@
+/*
+This is a good layout for a mobile-first CSS template.
+Following this flow will minimize the number of styles you need to write and will ensure you are thinking, designing and developing mobile-first.
+Most of your styles get written like standard CSS, but for your mobile presentation. Generally speaking, a good mobile presention will stretch out nicely for larger screens.
+
+Sometimes, when we stretch out to larger screens, we need to make minor tweaks for the larger devices -- you can make these tweaks in the tablet media query, or if the issue exists on desktop only, the desktop media query.
+You will find this is far easier than the opposite task of using CSS to cram your desktop experience into a mobile device.
+*/
+/*********************************************************************
+ LOADS IN A NICE RESET TO ENSURE ALL BROWSERS HAVE THE SAME BASE STYLES
+*********************************************************************/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+
+/*********************************************************************
+  YOUR MOBILE/BASE STYLES GO HERE
+*********************************************************************/
+* {
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+body{
+    background-color: #f2f2f2;
+    }
+
+
+img{
+
+    max-width: 100%;
+     max-height: 100vh;
+}
+
+
+p{
+    margin-left: auto;
+    margin-right: auto;
+    color: #black;
+    font-family: 'Raleway', sans-serif;
+    padding: 0px;
+    padding: 5px;
+    }
+
+h1{color: black;
+    text-align: center;
+}
+
+
+h3{text-align: center;
+color: #336699;
+text-transform: uppercase;
+}
+
+body{
+    display: block;
+}
+
+a{
+    color: #336699;
+}
+
+.header-background{
+    background-color: #d9d9d9;
+    border-color:  black;
+    border-width: 5px;
+    border-style: solid;
+}
+
+.box {
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    background-color: #bfbfbf;
+    display: block;
+  }
+
+.imagebox {
+    height: 100%;
+    padding: 0px;
+}
+        
+.center-fit {
+    max-width: 100%;
+     max-height: 100vh;
+}
+
+.chart {
+    max-width:  75%;
+    margin: 0 auto;
+  }
+
+.footerbox {
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    background-color: #a6a6a6;
+    padding: 20px;
+    display: block;
+    text-align: center;
+  }
+
+/*********************************************************************
+  YOUR TABLET/DESKTOP STYLES GO HERE
+*********************************************************************/
+@media(min-width: 681px) {
+    /* Any adjustments for tablets and larger go here.
+    Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+}
+
+* {
+        padding: 2px;
+    }
+
+p#text{
+    margin-left: auto;
+    margin-right: auto;
+    color: #black;
+    font-family: 'Raleway', sans-serif;
+    padding-right: 100px;
+    padding-left:  100px;
+    }
+
+/*********************************************************************
+  YOUR DESKTOP-ONLY STYLES GO HERE
+*********************************************************************/
+@media(min-width: 729px) {
+    p{
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+    /* Any adjustments for desktop and larger go here.
+    Note these styles will be applied to anything 729px or larger -- so desktop */
+}
